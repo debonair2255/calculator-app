@@ -60,15 +60,18 @@ body{
         height: 50px;
         cursor: pointer;
         border-radius: 5px;
-        box-shadow: -8px -8px 15px rgba(255, 255, 255, 0.1
-        5px 5px 15px rgba(0, 0, 0, 0.1));
+        box-shadow: -8px -8px 15px rgba(255, 255, 255, 0.1),
+        5px 5px 15px rgba(0, 0, 0, 0.1);
     
     }
-  .calculator form .btn .ac, .del {
+.calculator form .btn .ac,
+.calculator form .btn .del {
     background-color: deeppink;
-    color:#fff;
+    color: #fff;
+}
+
   }
 .calculator form .btn .equal{
     background-color: deeppink;
-    color:#fff 
+    color:#fff;
 }
