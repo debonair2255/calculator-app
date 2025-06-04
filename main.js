@@ -8,7 +8,12 @@ function valueDisplay(value) {
             if (displayBox.value.trim() === '') {
                 displayBox.value = '0';
             } else {
-                displayBox.value = eval(displayBox.value);
+                try {
+  displayBox.value = new Function('return ' + displayBox.value)();
+} catch (error) {
+  displayBox.value = 'Error';
+}
+
             }
         } catch (error) {
             displayBox.value = 'Error';
